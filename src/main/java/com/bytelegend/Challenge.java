@@ -1,6 +1,6 @@
 package com.bytelegend;
 
-import com.github.blindpirate.extensions.CaptureSystemOutputExtension;
+import com.github.blindpirate.extensions.CaptureSystemOutputExtensionBuilder;
 
 public class Challenge {
     public static void main(String[] args) {
@@ -17,6 +17,6 @@ public class Challenge {
      * class. Good luck!
      */
     public static Object createCaptureSystemOutputExtension() {
-        return new CaptureSystemOutputExtension();
+        return CaptureSystemOutputExtensionBuilder.builder().build();
     }
 }
