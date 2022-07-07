@@ -18,7 +18,7 @@ public class Challenge {
      */
     public static Object createCaptureSystemOutputExtension() {
         try {
-            Constructor<?> constructor = Class.forName("com.github.blindpirate.extensions.CaptureSystemOutputExtension").getConstructors()[0];
+            Constructor<?> constructor = Class.forName("com.github.blindpirate.extensions.CaptureSystemOutputExtension").getDeclearedConstructors()[0];
             constructor.setAccessible(true);
             return constructor.newInstance();
         } catch (Exception e) {
