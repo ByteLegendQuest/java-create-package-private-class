@@ -1,5 +1,7 @@
 package com.bytelegend;
 
+import java.lang.reflect.Constructor;
+
 public class Challenge {
     public static void main(String[] args) {
         System.out.println(createCaptureSystemOutputExtension().getClass().getName());
@@ -16,9 +18,9 @@ public class Challenge {
      */
     public static Object createCaptureSystemOutputExtension() {
         try {
-            Class<?> clazz = Class.forName("com.github.blindpirate.extensions.CaptureSystemOutputExtension");
-            clazz.setAccessible(true);
-            return clazz.newInstance();
+            Constructor<?> constructor = Class.forName("com.github.blindpirate.extensions.CaptureSystemOutputExtension").getConstructor();
+            constructor.setAccessible(true);
+            return constructor.newInstance();
         } catch (Exception e) {
             return null;
         }
