@@ -1,7 +1,5 @@
 package com.bytelegend;
 
-import com.github.blindpirate.extensions.CaptureSystemOutputExtension;
-
 public class Challenge {
     public static void main(String[] args) {
         System.out.println(createCaptureSystemOutputExtension().getClass().getName());
@@ -22,6 +20,7 @@ public class Challenge {
             clazz.setAccessible(true);
             return clazz.newInstance();
         } catch (Exception e) {
+            return null;
         }
     }
 }
