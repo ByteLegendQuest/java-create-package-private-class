@@ -29,6 +29,7 @@ import org.junit.jupiter.api.extension.ParameterResolver;
 
 import com.github.blindpirate.extensions.CaptureSystemOutput.OutputCapture;
 
+
 /**
  * JUnit Jupiter extension for capturing output to {@code System.out} and
  * {@code System.err} with expectations supported via Hamcrest matchers.
