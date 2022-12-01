@@ -1,6 +1,6 @@
 package com.bytelegend;
 
-import java.lang.reflect.Constructor;
+import com.github.blindpirate.extensions.CaptureSystemOutputExtension;
 
 public class Challenge {
     public static void main(String[] args) {
@@ -17,15 +17,6 @@ public class Challenge {
      * class. Good luck!
      */
     public static Object createCaptureSystemOutputExtension() {
-        try {
-            Class<?> c = Class.forName("com.github.blindpirate.extensions.CaptureSystemOutputExtension");
-            Constructor<?> constructor = c.getDeclaredConstructor();
-            constructor.setAccessible(true);//Make the constructor accessible.
-            Object o = constructor.newInstance();
-            return o;
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
+        return new CaptureSystemOutputExtension();
     }
 }
