@@ -7,7 +7,7 @@ public class Challenge {
     public static void main(String[] args) {
         System.out.println(createCaptureSystemOutputExtension().getClass().getName());
     }
-
+  
     /**
      * Because
      * [`CaptureSystemOutputExtension`](https://github.com/blindpirate/junit5-capture-system-output-extension/blob/4ee3aa0a0d9b2610b482e4571ecc33828c60248a/src/main/java/com/github/blindpirate/extensions/CaptureSystemOutputExtension.java#L44)
