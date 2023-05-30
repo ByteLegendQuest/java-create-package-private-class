@@ -1,6 +1,5 @@
 package com.bytelegend;
 
-import com.github.blindpirate.extensions.CaptureSystemOutputExtension;
 
 public class Challenge {
     public static void main(String[] args) {
