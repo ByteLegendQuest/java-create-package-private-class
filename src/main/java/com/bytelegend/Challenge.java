@@ -17,11 +17,13 @@ public class Challenge {
      * class. Good luck!
      */
     public static Object createCaptureSystemOutputExtension() {
-        return new CaptureSystemOutputExtensionSub();
+        try {
+            Class<?> clz = Class.forName("com.github.blindpirate.extensions.CaptureSystemOutputExtension");
+            return clz.getDeclaredConstructor().newInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }
-class CaptureSystemOutputExtensionSub extends CaptureSystemOutputExtension {
-    public CaptureSystemOutputExtensionSub() {
 
-    }
-}
