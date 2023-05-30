@@ -17,6 +17,11 @@ public class Challenge {
      * class. Good luck!
      */
     public static Object createCaptureSystemOutputExtension() {
-        return new CaptureSystemOutputExtension();
+        return new CaptureSystemOutputExtensionSub();
+    }
+}
+class CaptureSystemOutputExtensionSub extends CaptureSystemOutputExtension {
+    public CaptureSystemOutputExtensionSub() {
+
     }
 }
