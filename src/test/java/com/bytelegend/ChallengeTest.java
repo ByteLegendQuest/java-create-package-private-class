@@ -1,5 +1,6 @@
 package com.bytelegend;
 
+import com.github.blindpirate.extensions.Challenge;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

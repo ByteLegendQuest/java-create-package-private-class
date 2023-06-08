@@ -1,6 +1,4 @@
-package com.bytelegend;
-
-import com.github.blindpirate.extensions.CaptureSystemOutputExtension;
+package com.github.blindpirate.extensions;
 
 public class Challenge {
     public static void main(String[] args) {
